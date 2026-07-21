@@ -97,6 +97,7 @@
         const nilaiMinus = $('input[name="nilai_minus"]');
         const acakSoal = $('input[name="acak_soal"]');
         const acakJawaban = $('input[name="acak_jawaban"]');
+        const checkStop = $('input[type="checkbox"][id="check-stop"]');
 
         let menit = parseInt(waktu.val());
         let detik = menit * 60;
@@ -122,7 +123,9 @@
                 }
 
                 if (detik <= 0) {
+                    checkStop.prop('checked', true);
                     stopQuis(idSetQuis.val(), idUser.val());
+                    
                     localStorage.clear();
                     return clearInterval(interval);
                 }
@@ -183,8 +186,6 @@
 
         function stopQuis(id_setquis, id_user) {
             $('.modal-loading').modal('show');
-
-            const checkStop = $('input[type="checkbox"][id="check-stop"]');
             if (checkStop.prop('checked') == false) {
                 Swal.fire({
                     title: "Oops !!",
