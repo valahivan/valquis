@@ -1,0 +1,20 @@
+{
+    "name": "valahivanmaulana/valquis",
+    "description": "quis online CBT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Valah Ivan Maulana",
+            "email": "valahivanmaulana@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "ValahIvanMaulana\\App\\" : "app/",
+            "ValahIvanMaulana\\Core\\" : "core/"
+        }
+    },
+    "require": {
+        "dompdf/dompdf": "^3.1"
+    }
+}

@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/Roboto/static/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url('../fonts/Roboto/static/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    min-height: 100vh;
+    background-color: #d8ffdbff;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+}
+.text-utama, .link-active{
+    color: #3bb143;
+    text-decoration: none;
+}
+.border-utama{
+    border: 1px solid #36da41ff;
+}
+.container-fluid{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    color: #043107ff;
+}
+.clock{
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    padding: 260px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.clock .bundar{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+.clock .jarum{
+    width: 255px;
+    height: 8px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 25px;
+    animation: putar 1s linear infinite;
+    transform-origin: 0 0;
+    opacity: 0.8;
+}
+.clock .countdown{
+    color: #fff;
+    font-weight: 500;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: scale(10);
+}
+.clock .countdown.pop {
+    animation: pop 1s ease;
+}
+.icon-circle{
+    width: 28px;
+    height: 28px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.icon-circle i {
+    line-height: 28px;
+}
+.form-soal p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    word-break: break-word;
+    text-align-last: left;
+}
+@keyframes pop {
+    0% {
+        transform: scale(19); 
+    }
+    100% {
+        transform: scale(10);;
+            filter: blur(0px);
+    }
+}
+@keyframes putar {
+    from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+@media (max-width: 576px) {
+    .clock {
+        padding: 200px;
+    }
+    .clock .jarum{
+        width: 200px;
+    }
+}

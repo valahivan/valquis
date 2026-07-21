@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto/static/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto/static/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+.brand-text{
+    letter-spacing: 2px;
+}
+.text-utama{
+    color: #3bb143;
+    text-decoration: none;
+}
+.title{
+    color: #043107ff;
+}
+#list-soal p, #list-jawaban p {
+    margin-bottom: 0;
+    display: inline-block;
+}
+.select2-container--bootstrap4 .select2-selection--single {
+    height: calc(1.5em + 0.5rem + 2px) !important;
+    padding: 0 !important;
+}
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered {
+    line-height: calc(1.5em + 0.5rem + 2px - 9px) !important;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.875rem !important;
+}
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__arrow {
+    line-height: calc(1.5em + 0.5rem + 2px) ;
+ }
+.card-quis p {
+    text-align: justify;
+}
+
+.card-pengguna {
+    border: 2px solid #043107ff;
+    border-radius: 20px;
+}
