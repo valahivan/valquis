@@ -43,7 +43,6 @@
                         <th class="text-center align-middle">Nama Quis</th>
                         <th class="text-center align-middle">Waktu Mulai</th>
                         <th class="text-center align-middle">Waktu Akhir</th>
-                        <th class="text-center align-middle">Waktu</th>
                         <th class="text-center align-middle">Nilai Akhir</th>
                         <th class="text-center align-middle">Action</th>
                     </tr>

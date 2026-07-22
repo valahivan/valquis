@@ -54,7 +54,6 @@ class QuizController extends Controller {
                     <td class='align-middle'>$nama</td>
                     <td class='align-middle text-center'>$start_date</td>
                     <td class='align-middle text-center'>$end_date</td>
-                    <td class='align-middle text-center'>$waktu menit</td>
                     <td class='align-middle text-center'>$nilai</td>
                     <td class='align-middle text-center'>
                         <button type='button' name='$nama' value='$status' class='btn btn-sm' onclick='mulaiQuis(\"$id_setquis\",\"$nama\", \"$id_topik\", \"$id_user\", \"$waktu\", \"$nilai_plus\", \"$nilai_minus\", \"$acak_soal\", \"$acak_jawaban\", \"$token\", \"$status\")'></button>
