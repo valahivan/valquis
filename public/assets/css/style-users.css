@@ -21,7 +21,7 @@ body {
     text-decoration: none;
 }
 .border-utama{
-    border: 1px solid #36da41ff;
+    border: 1.5px solid #36da41ff;
 }
 .container-fluid{
     min-height: 100vh;
