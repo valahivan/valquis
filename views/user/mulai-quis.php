@@ -17,7 +17,7 @@
     <input type="hidden" name="acak_jawaban" value="<?= $acak_jawaban ?>">
 
     <div class="container-fluid py-3">
-        <header class="card-title col-lg-10 col-11 border-top border-success bg-white border-5 rounded">
+        <header class="card-title col-lg-10 col-11 border-top border-success bg-white border-5 rounded shadow">
             <div class="title-info p-3">
                 <div class="title-group d-flex justify-content-between pb-2 align-items-center">
                     <h5 class="brand text-utama fw-semibold mb-0"><i class="bi bi-layers-fill"></i> VALQUIS <span class="text-dark">CBT</span></h5>

@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container-fluid py-3">
-        <header class="card-title col-lg-10 col-11 border-top border-success bg-white border-5 rounded mb-3">
+        <header class="card-title col-lg-10 col-11 border-top border-success bg-white border-5 rounded mb-3 shadow">
             <div class="title-info p-3">
                 <div class="title-group d-flex justify-content-between pb-2 align-items-center">
                     <h5 class="brand text-utama fw-semibold mb-0"><i class="bi bi-layers-fill"></i> VALQUIS <span class="text-dark">CBT</span></h5>
@@ -36,7 +36,7 @@
                 <input type="search" class="form-control form-control-sm w-auto" id="search" placeholder="Search" oninput="loadDaftarQuis()">
             </div>
             <div class="table-responsive">
-            <table class="table table-sm table-bordered nowrap" id="listQuis">
+            <table class="table table-sm table-bordered" id="listQuis">
                 <thead>
                     <tr>
                         <th class="text-center align-middle">No</th>
