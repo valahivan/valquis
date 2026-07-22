@@ -14,7 +14,7 @@
                     <h5 class="brand text-utama fw-semibold"><i class="bi bi-layers-fill"></i> VALQUIS <span class="text-dark">CBT</span></h5>
                     <h6 class="text-utama d-lg-block d-none"><i class="fas fa-pager"></i> Halaman | Login User</h6>
                 </div>
-                <h2>Selamat datang di Halaman Login</h2>
+                <h2>Selamat datang di Halaman Login User</h2>
                 <p>Silahkan masukkan username dan password</p>
                 <ul class="p-0 d-flex justify-content-start gap-4 m-0" type="none">
                     <li class="nav-item small"><a href="login-page" class="nav-link <?= $_SERVER['PATH_INFO'] == '/login-page' ? 'text-utama' : '' ?>"><i class="bi bi-person"></i> Login User</a></li>
