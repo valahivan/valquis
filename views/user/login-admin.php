@@ -8,7 +8,7 @@
     <?php include_once 'partial/link-user-style.php' ?>
 </head>
 <body>
-    <div class="container-fluid py-3">
+    <div class="container-fluid py-3 px-0">
         <header class="card-title col-lg-10 col-11 border-top border-success bg-white border-5 rounded mb-3 shadow">
             <div class="title-info p-3">
                 <div class="title-group d-flex justify-content-between pb-2 align-items-center">
