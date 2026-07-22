@@ -13,7 +13,7 @@ class GuestMiddleware implements Middleware {
 
                $user = new User();
                $id_user = $user->where('remember_token', '=', $token)->pluck('id_user');
-               if ($id_user) $_SESSION[$key] = $id_user;
+               if ($id_user) $_SESSION['id_user'] = $id_user;
           }
 
           if (isset($_SESSION[$key])) {

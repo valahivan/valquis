@@ -61,7 +61,7 @@
                   <?php endwhile ?>
                 </select>
               </div>
-              <div class="form-group">
+              <div class="form-group mb-3">
                 <label for="groups[]" class="form-label text-dark font-weight-medium">Pilih Group</label>
                 <select name="groups[]" id="groups[]" multiple="multiple" class="form-control select2bs4" multiple="multiple" data-placeholder="Pilih beberapa group" style="height: 200px;">
                   <?php while ($row = mysqli_fetch_assoc($group)) : ?>
@@ -75,6 +75,10 @@
               </div>
             </div>
             <div class="col-lg-6 col-12">
+              <div class="form-group mb-3">
+                <label for="date_range" class="form-label text-dark font-weight-medium">Rentang Quis</label>
+                <input type="text" name="date_range" id="date_range" class="form-control form-control-sm">
+              </div>
               <div class="form-group mb-3">
                 <label for="waktu" class="form-label text-dark font-weight-medium">Waktu</label>
                 <input type="text" name="waktu" id="waktu" class="form-control form-control-sm" placeholder="Waktu Pengerjaan" autocomplete="off" value="10">
@@ -176,6 +180,15 @@
     }
 
     $(document).ready(function () {
+      $('input[name="date_range"]').daterangepicker({
+        timePicker: true,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+          format: 'YYYY-MM-DD hh:mm:ss'
+        }
+      });
+
       $('.form-add').submit(function (e) {
         e.preventDefault();
 

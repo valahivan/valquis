@@ -51,6 +51,8 @@
                   <th class="text-center align-middle">No</th>
                   <th class="text-center align-middle">Nama Quis</th>
                   <th class="text-center align-middle">Nama Topik</th>
+                  <th class="text-center align-middle">Waktu Mulai</th>
+                  <th class="text-center align-middle">Waktu Akhir</th>
                   <th class="text-center align-middle">Waktu</th>
                   <th class="text-center align-middle">Nilai Plus</th>
                   <th class="text-center align-middle">Nilai Minus</th>
@@ -63,6 +65,8 @@
                 </tr>
               </thead>
               <tbody>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -141,6 +145,8 @@
         {"data": null, "defaultContent": '', "className": "text-lg-center text-left align-middle"},
         {"data": "nama", "className": "align-middle"},
         {"data": "topik", "className": "align-middle"},
+        {"data": "waktu_mulai", "className": "text-lg-center text-left align-middle"},
+        {"data": "waktu_akhir", "className": "text-lg-center text-left align-middle"},
         {"data": "waktu", "className": "text-lg-center text-left align-middle"},
         {"data": "nilai_plus", "className": "text-lg-center align-middle"},
         {"data": "nilai_minus", "className": "text-lg-center text-left align-middle"},

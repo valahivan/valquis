@@ -17,6 +17,9 @@
  <script src="<?= BASE_URL ?>public/assets/plugins/ckeditor/ckeditor.js"></script>
  <!-- Chart JS -->
  <script src="<?= BASE_URL ?>public/assets/plugins/chartjs/chart.min.js"></script>
+ <!-- Daterange -->
+ <script src="<?= BASE_URL ?>public/assets/plugins/daterangepicker/moment.min.js"></script>
+ <script src="<?= BASE_URL ?>public/assets/plugins/daterangepicker/daterangepicker.min.js"></script>
  
  <script>
     function changePassword(form) {

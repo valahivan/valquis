@@ -16,7 +16,7 @@ use ValahIvanMaulana\App\Model\Token;
 $token = new Token();
 $result = $token->get();
 
-$waktu_sekarang = date("Y-m-d H:m:s", time());
+$waktu_sekarang = date("Y-m-d H:i:s", time());
 while ($row = $token->fetchAssoc($result)) {
     $expired_at = $row['expired_at'];
     if ($expired_at < $waktu_sekarang) {

@@ -34,7 +34,7 @@ class TokenController extends Controller {
             echo json_encode($this->status);
             return FALSE;
         } else {
-            $waktu_expired = date("Y-m-d H:m:s", strtotime("+ $expired_at hour"));
+            $waktu_expired = date("Y-m-d H:i:s", strtotime("+ $expired_at hour"));
             $token = new Token();
             $token->insertData([
                 'nama_token' => $nama_token, 

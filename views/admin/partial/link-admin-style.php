@@ -11,3 +11,6 @@
 <link rel="stylesheet" href="<?= BASE_URL ?>public/assets/plugins/select2/css/select2.min.css">
 <link rel="stylesheet" href="<?= BASE_URL ?>public/assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 <link rel="stylesheet" href="<?= BASE_URL ?>public/assets/css/style-admin.css">
+
+<!-- Daterange -->
+<link rel="stylesheet" href="<?= BASE_URL ?>public/assets/plugins/daterangepicker/daterangepicker.css">

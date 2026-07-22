@@ -95,7 +95,8 @@ class AdminAuthController extends Controller {
     }
     
     public function logoutAdmin() { 
-        session_start();
+        AuthMiddleware::handle('id_admin', 'login-admin-page');
+        
         unset($_SESSION['id_admin']);
         unset($_SESSION['nama_admin']);
         

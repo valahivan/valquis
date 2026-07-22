@@ -16,18 +16,20 @@ class SetQuisController extends Controller {
     public function listSetQuis() {
         AuthMiddleware::handle('id_admin', 'login-admin-page');
 
-        $setQuis = new SetQuis();
-        $result = $setQuis->select(['val_setquis.*', 'val_topik.nama AS nama_topik'])
+        $set_quis = new SetQuis();
+        $result = $set_quis->select(['val_setquis.*', 'val_topik.nama AS nama_topik'])
             ->innerJoin(['val_topik ON val_setquis.topik_id = val_topik.id_topik'])
             ->get();
 
         $data = [];
         $count = 1;
-        while ($row = $setQuis->fetchAssoc($result)) {
+        while ($row = $set_quis->fetchAssoc($result)) {
             $id_setQuis = $row['id_setquis'];
             $nama = $row['nama'];
             $topik = $row['nama_topik'];
             $groups = $row['groups'];
+            $start_date = $row['start_date'];
+            $end_date = $row['end_date'];
             $waktu = $row['waktu'];
             $nilai_plus = $row['nilai_plus'];
             $nilai_minus = $row['nilai_minus'];
@@ -40,6 +42,8 @@ class SetQuisController extends Controller {
                 'count' => $count,
                 'nama' => $nama,
                 'topik' => $topik,
+                'waktu_mulai' => $start_date,
+                'waktu_akhir' => $end_date,
                 'waktu' => $waktu." Menit",
                 'nilai_plus' => $nilai_plus,
                 'nilai_minus' => $nilai_minus,
@@ -80,6 +84,7 @@ class SetQuisController extends Controller {
         $this->setRulesValidate($requests, 'val_setquis', [
             'nama' => 'required|unique',
             'topik_id' => 'required',
+            'date_range' => 'required',
             'waktu' => 'required',
             'nilai_plus' => 'required',
             'nilai_minus' => 'required'
@@ -89,25 +94,32 @@ class SetQuisController extends Controller {
                 'unique' => 'Nama topik tidak boleh sama!',
             ],
             'topik_id' => ['required' => 'Topik tidak boleh kosong, silahkan pilih dulu!'],
+            'date_range' => ['required' => 'Silahkan pilih rentang waktu quis!'],
             'waktu' => ['required' => 'Waktu tidak boleh kosong!'],
             'nilai_plus' => ['required' => 'Nilai plus tidak boleh kosong!'],
             'nilai_minus' => ['required' => 'Nilai minus boleh kosong!'],
         ]);
 
         
+        $date_range = explode(' - ', $requests['date_range']);
+        $start_date = $this->onlyCharsAndTrim($date_range[0]);
+        $end_date = $this->onlyCharsAndTrim($date_range[1]);
+
         $groups = !isset($requests['groups']) ? $this->errors['groups'] = "Silahkan Pilih Group Minimal 1" : $requests['groups'];
         if ($this->validated() === TRUE) {
             echo json_encode($this->status);
             return FALSE;
         } else {
-            $setQuis = new SetQuis();
+            $set_quis = new SetQuis();
             $acak_soal = $requests['acak_soal'] ?? 0;
             $acak_jawaban = $requests['acak_jawaban'] ?? 0;
             $token = $requests['token'] ?? 0;
-            $setQuis->insertData([
+            $set_quis->insertData([
                 'nama' => $nama,
                 'topik_id' => $topik,
                 'groups' => implode(', ', $groups),
+                'start_date' => $start_date,
+                'end_date' => $end_date,
                 'waktu' => $waktu,
                 'nilai_plus' => $nilai_plus,
                 'nilai_minus' => $nilai_minus,
@@ -127,12 +139,12 @@ class SetQuisController extends Controller {
         AuthMiddleware::handle('id_admin', 'login-admin-page');
 
         $id = $params['id'];
-        $setquis = new SetQuis();
+        $set_quis = new SetQuis();
         $topik = new Topik();
         $group = new Group();
         
         return $this->view('admin.setquis.edit-setquis', [
-            'setquis' => $setquis->findOrFails('id_setquis', $id), 
+            'setquis' => $set_quis->findOrFails('id_setquis', $id), 
             'topik' => $topik->get(),
             'group' => $group->get(),
         ]);
@@ -147,34 +159,42 @@ class SetQuisController extends Controller {
         $nilai_plus = $this->onlyCharsAndTrim($requests['nilai_plus']);
         $nilai_minus = $this->onlyCharsAndTrim($requests['nilai_minus']);
 
-        $setQuis = new SetQuis();
-
         $this->setRulesValidate($requests, 'val_setquis', [
             'nama' => 'required',
             'topik_id' => 'required',
+            'date_range' => 'required',
             'waktu' => 'required',
             'nilai_plus' => 'required',
             'nilai_minus' => 'required'
         ], [
             'nama' => ['required' => 'Nama topik tidak boleh kosong!'],
             'topik_id' => ['required' => 'Topik tidak boleh kosong, silahkan pilih dulu!'],
+            'date_range' => ['required' => 'Silahkan pilih rentang waktu quis!'],
             'waktu' => ['required' => 'Waktu tidak boleh kosong!'],
             'nilai_plus' => ['required' => 'Nilai plus tidak boleh kosong!'],
             'nilai_minus' => ['required' => 'Nilai minus boleh kosong!'],
         ]);
+
+        $date_range = explode(' - ', $requests['date_range']);
+        $start_date = $this->onlyCharsAndTrim($date_range[0]);
+        $end_date = $this->onlyCharsAndTrim($date_range[1]);
 
         $groups = !isset($requests['groups']) ? $requests['old_groups'] : implode(', ', $requests['groups']);
         if ($this->validated() === TRUE) {
             echo json_encode($this->status);
             return FALSE;
         } else {
+            $set_quis = new SetQuis();
+
             $acak_soal = $requests['acak_soal'] ?? 0;
             $acak_jawaban = $requests['acak_jawaban'] ?? 0;
             $token = $requests['token'] ?? 0;
-            $setQuis->where('id_setquis', '=', $id)->updateData([
+            $set_quis->where('id_setquis', '=', $id)->updateData([
                 'nama' => $nama,
                 'topik_id' => $topik,
                 'groups' => $groups,
+                'start_date' => $start_date,
+                'end_date' => $end_date,
                 'waktu' => $waktu,
                 'nilai_plus' => $nilai_plus,
                 'nilai_minus' => $nilai_minus,
@@ -193,8 +213,8 @@ class SetQuisController extends Controller {
     public function destroyQuis(string $id) {
         AuthMiddleware::handle('id_admin', 'login-admin-page');
 
-        $setQuis = new SetQuis();
-        $setQuis->where('id_setquis', '=', $id)->deleteData();
+        $set_quis = new SetQuis();
+        $set_quis->where('id_setquis', '=', $id)->deleteData();
         $this->status['status'] = 1;
         $this->status['message']['success'] = "Data quis berhasil dihapus!";
 

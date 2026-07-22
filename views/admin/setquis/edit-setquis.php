@@ -78,6 +78,10 @@
             </div>
             <div class="col-lg-6 col-12">
               <div class="form-group mb-3">
+                <label for="date_range" class="form-label text-dark font-weight-medium">Rentang Quis</label>
+                <input type="text" name="date_range" id="date_range" class="form-control form-control-sm">
+              </div>
+              <div class="form-group mb-3">
                 <label for="waktu" class="form-label text-dark font-weight-medium">Waktu</label>
                 <input type="text" name="waktu" id="waktu" class="form-control form-control-sm" placeholder="Waktu Pengerjaan" autocomplete="off" value="<?= $setquis['waktu'] ?>">
               </div>
@@ -164,12 +168,21 @@
     }
 
     $(document).ready(function () {
-        $('.form-edit').submit(function (e) {
-            e.preventDefault();
+       $('input[name="date_range"]').daterangepicker({
+        timePicker: true,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+          format: 'YYYY-MM-DD hh:mm:ss'
+        }
+      });
 
-            let form = $(this);
-            editQuis(form);
-        });
+      $('.form-edit').submit(function (e) {
+        e.preventDefault();
+
+        let form = $(this);
+        editQuis(form);
+      });
     });
   </script>
 </body>
