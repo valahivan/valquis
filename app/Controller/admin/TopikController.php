@@ -29,7 +29,7 @@ class TopikController extends Controller {
                 'count' => $count,
                 'nama' => $nama,
                 'deskripsi' => $this->limit($deskripsi, 40),
-                'id_topik' => "<button type='button' class='btn btn-sm font-weight-bold text-info' onclick='modalEdit($id_topik, \"$nama\", \"$deskripsi\")'><i class='bi bi-pencil-square'></i></button><button type='button' class='btn btn-sm font-weight-bold text-info' onclick='modalDelete($id_topik, \"$nama\")'><i class='bi bi-trash-fill'></i></button>
+                'id_topik' => "<button type='button' class='btn btn-sm font-weight-bold text-info py-0' onclick='modalEdit($id_topik, \"$nama\", \"$deskripsi\")'><i class='bi bi-pencil-square'></i></button><button type='button' class='btn btn-sm font-weight-bold text-info py-0' onclick='modalDelete($id_topik, \"$nama\")'><i class='bi bi-trash-fill'></i></button>
                 "
             ];
             $count++;
