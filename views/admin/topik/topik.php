@@ -23,7 +23,7 @@
       <div class="container-fluid">
         <div class="card">
           <div class="title-info py-3 px-4">
-              <h2 class="font-weight-bold title">Halaman Daftar Topik</h2>
+              <h2 class="font-weight-bold title">Daftar Topik</h2>
               <p>Ini adalah halaman yang berisi data Topik quis</p>
           </div>
         </div>
