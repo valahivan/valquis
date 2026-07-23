@@ -53,22 +53,14 @@
                   <th class="text-center align-middle">Nama Topik</th>
                   <th class="text-center align-middle">Waktu Mulai</th>
                   <th class="text-center align-middle">Waktu Akhir</th>
-                  <th class="text-center align-middle">Waktu</th>
-                  <th class="text-center align-middle">Nilai Plus</th>
-                  <th class="text-center align-middle">Nilai Minus</th>
-                  <th class="text-center align-middle">Acak Soal</th>
-                  <th class="text-center align-middle">Acak Jawaban</th>
                   <th class="text-center align-middle">Group yang dipilih</th>
+                  <th class="text-center align-middle">Sepsifikasi Soal</th>
                   <th class="text-center align-middle">Token</th>
                   <th class="text-center align-middle">Tanggal dibuat</th>
                   <th class="text-center align-middle">Action</th>
                 </tr>
               </thead>
               <tbody>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -147,12 +139,8 @@
         {"data": "topik", "className": "align-middle"},
         {"data": "waktu_mulai", "className": "text-lg-center text-left align-middle"},
         {"data": "waktu_akhir", "className": "text-lg-center text-left align-middle"},
-        {"data": "waktu", "className": "text-lg-center text-left align-middle"},
-        {"data": "nilai_plus", "className": "text-lg-center align-middle"},
-        {"data": "nilai_minus", "className": "text-lg-center text-left align-middle"},
-        {"data": "acak_soal", "className": "text-left text-left align-middle"},
-        {"data": "acak_jawaban", "className": "text-left text-left align-middle"},
         {"data": "groups", "className": "text-left align-middle"},
+        {"data": "soal", "className": "text-left align-middle"},
         {"data": "token", "className": "text-left align-middle"},
         {"data": "created_at", "className": "text-left align-middle"},
         {"data": "action", "className": "text-left align-middle"}

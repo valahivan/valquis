@@ -44,14 +44,10 @@ class SetQuisController extends Controller {
                 'topik' => $topik,
                 'waktu_mulai' => $start_date,
                 'waktu_akhir' => $end_date,
-                'waktu' => $waktu." Menit",
-                'nilai_plus' => $nilai_plus,
-                'nilai_minus' => $nilai_minus,
-                'acak_soal' => $acak_soal,
-                'acak_jawaban' => $acak_jawaban,
                 'groups' => $groups,
-                'created_at' => $created_at,
+                'soal' => "Waktu=$waktu Menit, Nilai Plus=$nilai_plus, Nilai Minus=$nilai_minus, = Acak Soal=$acak_soal, Acak Jawaban=$acak_jawaban",
                 'token' => $token,
+                'created_at' => $created_at,
                 'action' => "<a href='edit-quis-page?id=$id_setQuis' class='btn btn-sm font-weight-bold text-info py-0'><i class='bi bi-pencil-square'></i></a>
                 <button type='button' class='btn btn-sm font-weight-bold text-info py-0' onclick='modalDelete(\"$id_setQuis\", \"$nama\")'><i class='bi bi-trash-fill'></i></button>"
             ];
