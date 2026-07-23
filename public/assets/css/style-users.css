@@ -101,9 +101,9 @@ to {
 
 @media (max-width: 576px) {
     .clock {
-        padding: 200px;
+        padding: 190px;
     }
     .clock .jarum{
-        width: 200px;
+        width: 190px;
     }
 }
