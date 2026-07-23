@@ -79,9 +79,9 @@
         </table>
         </div>
       <div class="card-footer bg-white border">
-        <form action="add-quis-page" method="get">
-          <button type="submit" class="btn btn-sm btn-success" id="btn-select">Tambah</button>
-        </form>
+        <a href="add-quis-page">
+          <button type="button" class="btn btn-sm btn-success">Tambah</button>
+        </a>
       </div>
     </div>
   </section>
