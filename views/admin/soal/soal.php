@@ -163,8 +163,8 @@
         {"data": "topik", "className": "align-middle"},
         {"data": "no_soal", "className": "align-middle"},
         {"data": "soal", "className": "align-middle"},
-        {"data": "jawaban", "className": "align-middle text-center"},
-        {"data": "action", "className": "text-center align-middle"},
+        {"data": "jawaban", "className": "text-lg-center text-left align-middle"},
+        {"data": "action", "className": "text-lg-center text-left align-middle"},
       ],
     });
 
