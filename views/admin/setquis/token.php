@@ -48,7 +48,7 @@
             </div>
             <div class="alert alert-info">
               <p class="mb-0 ml-1">Kode token generate preview</p>
-              <h1 id="kode-token" class="font-weight-bold">000000</h1>
+              <h1 id="kode-token" class="font-weight-bold mb-0">000000</h1>
               <p class="mb-0 ml-1">Klik tombol Generate Token</p>
             </div>
             <div class="form-group mb-3">
