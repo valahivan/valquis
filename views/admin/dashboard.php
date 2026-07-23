@@ -22,9 +22,13 @@
     <section class="header pt-2">
       <div class="container-fluid">
         <div class="card">
-          <div class="title-info py-3 px-4">
+          <div class="card-body pb-0">
             <h2 class="font-weight-bold title">Selamat Datang di Dashboard</h2>
             <p>Ini adalah halaman dashboard yang berisi informasi data</p>
+          </div>
+          <div class="card-footer py-2 border-top bg-white d-flex justify-content-between flex-wrap">
+            <small><i class="fas fa-user"></i> <?= $_SESSION['nama_admin'] ?></small>
+            <small><i class="fas fa-pager"></i> Halaman | Dashboard</small>
           </div>
         </div>
       </div><!-- /.container-fluid -->

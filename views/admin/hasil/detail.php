@@ -22,12 +22,16 @@
     <section class="header pt-2">
       <div class="container-fluid">
         <div class="card">
-            <div class="title-info py-3 px-4">
-                <input type="hidden" name="nama_group" value="<?= $nama_group ?>">
-                <input type="hidden" name="nama_quis" value="<?= $nama_quis ?>">
-                <h2 class="font-weight-bold title">Detail Nilai <?= $nama_quis ?></h2>
-                <p>Ini adalah halaman dashboard yang berisi informasi detail nilai quis</p>
-            </div>
+          <div class="card-body pb-0">
+            <input type="hidden" name="nama_group" value="<?= $nama_group ?>">
+            <input type="hidden" name="nama_quis" value="<?= $nama_quis ?>">
+            <h2 class="font-weight-bold title">Detail Nilai <?= $nama_quis ?></h2>
+            <p>Ini adalah halaman dashboard yang berisi informasi detail nilai quis</p>
+          </div>
+          <div class="card-footer py-2 border-top bg-white d-flex justify-content-between flex-wrap">
+            <small><i class="fas fa-user"></i> <?= $_SESSION['nama_admin'] ?></small>
+            <small><i class="fas fa-pager"></i> Halaman | Detail Nilai</small>
+          </div>
         </div>
       </div><!-- /.container-fluid -->
     </section>

@@ -28759,8 +28759,7 @@ html.maximized-card {
 }
 
 .card-header::after,
-.card-body::after,
-.card-footer::after {
+.card-body::after{
   display: block;
   clear: both;
   content: "";

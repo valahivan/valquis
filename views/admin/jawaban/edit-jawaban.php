@@ -22,9 +22,13 @@
     <section class="header pt-2">
       <div class="container-fluid">
         <div class="card">
-          <div class="title-info py-3 px-4">
-              <h2 class="font-weight-bold title">Edit Jawaban</h2>
-              <p>Ini adalah halaman untuk mengedit jawaban</p>
+          <div class="card-body pb-0">
+            <h2 class="font-weight-bold title">Edit Jawaban</h2>
+            <p>Ini adalah halaman untuk mengedit jawaban</p>
+          </div>
+          <div class="card-footer py-2 border-top bg-white d-flex justify-content-between flex-wrap">
+            <small><i class="fas fa-user"></i> <?= $_SESSION['nama_admin'] ?></small>
+            <small><i class="fas fa-pager"></i> Halaman | Edit Jawaban</small>
           </div>
         </div>
       </div><!-- /.container-fluid -->
