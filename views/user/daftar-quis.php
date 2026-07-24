@@ -198,7 +198,7 @@
                 $('.modal-token form input[name="acak_jawaban"]').val(acak_jawaban);
 
                 $('.modal-token table tr #nama-quis').text(nama);
-                $('.modal-token form input[name="waktu"], .modal-token table tr #waktu').val(waktu).text(waktu);
+                $('.modal-token form input[name="waktu"], .modal-token table tr #waktu').val(waktu).text(waktu + " Menit");
                 $('.modal-token form input[name="nilai_plus"], .modal-token table tr #nilai-plus').val(nilai_plus).text(nilai_plus + " Poin");
                 $('.modal-token form input[name="nilai_minus"], .modal-token table tr #nilai-minus').val(nilai_minus).text(nilai_minus + " Poin");
 
