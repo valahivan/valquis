@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2026 at 06:04 AM
+-- Generation Time: Jul 24, 2026 at 04:47 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -98,33 +98,33 @@ CREATE TABLE `val_hasil` (
 --
 
 INSERT INTO `val_hasil` (`id_hasil`, `user_id`, `group_id`, `setquis_id`, `nilai`, `waktu_berjalan`, `status`, `created_at`) VALUES
-(1, 3, 2, 1, 85, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:50:49'),
-(2, 4, 2, 1, 90, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:55:52'),
-(3, 5, 2, 1, 85, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:59:16'),
-(4, 6, 2, 1, 75, 'Berjalan 6 menit', 'selesai', '2026-07-18 12:06:13'),
-(5, 7, 2, 1, 85, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:50:49'),
-(6, 8, 2, 1, 69, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:55:52'),
-(7, 9, 2, 1, 71, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:59:16'),
-(8, 10, 2, 1, 80, 'Berjalan 6 menit', 'selesai', '2026-07-18 12:06:13'),
-(9, 11, 2, 1, 65, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:50:49'),
-(10, 12, 2, 1, 60, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:55:52'),
-(11, 13, 2, 1, 66, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:59:16'),
-(12, 14, 2, 1, 84, 'Berjalan 6 menit', 'selesai', '2026-07-18 12:06:13'),
-(13, 15, 2, 1, 72, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:50:49'),
-(14, 17, 2, 1, 97, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:55:52'),
-(15, 16, 2, 1, 75, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:59:16'),
-(16, 18, 2, 1, 79, 'Berjalan 6 menit', 'selesai', '2026-07-18 12:06:13'),
-(17, 19, 2, 1, 86, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:50:49'),
-(18, 20, 2, 1, 74, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:55:52'),
-(19, 21, 2, 1, 77, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:59:16'),
-(20, 22, 2, 1, 71, 'Berjalan 6 menit', 'selesai', '2026-07-18 12:06:13'),
-(21, 23, 2, 1, 68, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:50:49'),
-(22, 24, 2, 1, 90, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:55:52'),
-(23, 25, 2, 1, 71, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:59:16'),
-(24, 26, 2, 1, 70, 'Berjalan 6 menit', 'selesai', '2026-07-18 12:06:13'),
-(25, 27, 2, 1, 82, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:55:52'),
-(26, 9, 2, 1, 96, 'Berjalan 7 menit', 'selesai', '2026-07-18 11:59:16'),
-(27, 29, 2, 1, 78, 'Berjalan 6 menit', 'selesai', '2026-07-18 12:06:13');
+(1, 3, 2, 1, 82, 'Berjalan 9 Menit', 'selesai', '2026-07-24 02:37:07'),
+(2, 4, 2, 1, 70, 'Berjalan 7 menit', 'selesai', '2026-07-24 02:37:07'),
+(3, 5, 2, 1, 68, 'Berjalan 2 menit', 'selesai', '2026-07-24 02:37:07'),
+(4, 6, 2, 1, 79, 'Berjalan 9 menit', 'selesai', '2026-07-24 02:37:07'),
+(5, 7, 2, 1, 67, 'Berjalan 9 Menit', 'selesai', '2026-07-24 02:37:07'),
+(6, 8, 2, 1, 55, 'Berjalan 7 menit', 'selesai', '2026-07-24 02:37:07'),
+(7, 9, 2, 1, 76, 'Berjalan 2 menit', 'selesai', '2026-07-24 02:37:07'),
+(8, 10, 2, 1, 69, 'Berjalan 9 menit', 'selesai', '2026-07-24 02:37:07'),
+(9, 11, 2, 1, 77, 'Berjalan 9 Menit', 'selesai', '2026-07-24 02:37:07'),
+(10, 12, 2, 1, 59, 'Berjalan 7 menit', 'selesai', '2026-07-24 02:37:07'),
+(11, 13, 2, 1, 71, 'Berjalan 2 menit', 'selesai', '2026-07-24 02:37:07'),
+(12, 14, 2, 1, 80, 'Berjalan 9 menit', 'selesai', '2026-07-24 02:37:07'),
+(13, 15, 2, 1, 73, 'Berjalan 9 Menit', 'selesai', '2026-07-24 02:37:07'),
+(14, 17, 2, 1, 95, 'Berjalan 7 menit', 'selesai', '2026-07-24 02:37:07'),
+(15, 16, 2, 1, 67, 'Berjalan 2 menit', 'selesai', '2026-07-24 02:37:07'),
+(16, 18, 2, 1, 76, 'Berjalan 9 menit', 'selesai', '2026-07-24 02:37:07'),
+(17, 19, 2, 1, 83, 'Berjalan 9 Menit', 'selesai', '2026-07-24 02:37:07'),
+(18, 20, 2, 1, 84, 'Berjalan 7 menit', 'selesai', '2026-07-24 02:37:07'),
+(19, 21, 2, 1, 74, 'Berjalan 2 menit', 'selesai', '2026-07-24 02:37:07'),
+(20, 22, 2, 1, 70, 'Berjalan 9 menit', 'selesai', '2026-07-24 02:37:07'),
+(21, 23, 2, 1, 69, 'Berjalan 9 Menit', 'selesai', '2026-07-24 02:37:07'),
+(22, 24, 2, 1, 88, 'Berjalan 7 menit', 'selesai', '2026-07-24 02:37:07'),
+(23, 25, 2, 1, 77, 'Berjalan 2 menit', 'selesai', '2026-07-24 02:37:07'),
+(24, 26, 2, 1, 73, 'Berjalan 9 menit', 'selesai', '2026-07-24 02:37:07'),
+(25, 27, 2, 1, 80, 'Berjalan 7 menit', 'selesai', '2026-07-24 02:37:07'),
+(26, 43, 2, 1, 90, 'Berjalan 2 menit', 'selesai', '2026-07-24 02:37:07'),
+(27, 29, 2, 1, 79, 'Berjalan 9 menit', 'selesai', '2026-07-24 02:37:07');
 
 -- --------------------------------------------------------
 
@@ -337,6 +337,8 @@ CREATE TABLE `val_setquis` (
   `nama` varchar(100) NOT NULL,
   `topik_id` bigint(20) NOT NULL,
   `groups` varchar(100) NOT NULL,
+  `start_date` datetime NOT NULL,
+  `end_date` datetime NOT NULL,
   `waktu` char(3) NOT NULL,
   `nilai_plus` char(3) NOT NULL,
   `nilai_minus` char(3) NOT NULL,
@@ -350,9 +352,9 @@ CREATE TABLE `val_setquis` (
 -- Dumping data for table `val_setquis`
 --
 
-INSERT INTO `val_setquis` (`id_setquis`, `nama`, `topik_id`, `groups`, `waktu`, `nilai_plus`, `nilai_minus`, `token`, `acak_soal`, `acak_jawaban`, `created_at`) VALUES
-(1, 'Quis Informatika', 1, 'XII Akuntansi, XII TKJ 1, XII TKJ 2, XII TKR 1, XII TKR 2', '10', '5', '-5', 1, 1, 1, '2026-07-17 10:10:06'),
-(2, 'Quis Pendidikan Agama Islam', 2, 'XII Akuntansi, XII TKJ 1, XII TKJ 2, XII TKR 1, XII TKR 2', '10', '5', '-5', 1, 1, 1, '2026-07-17 10:10:28');
+INSERT INTO `val_setquis` (`id_setquis`, `nama`, `topik_id`, `groups`, `start_date`, `end_date`, `waktu`, `nilai_plus`, `nilai_minus`, `token`, `acak_soal`, `acak_jawaban`, `created_at`) VALUES
+(1, 'Quis Informatika', 1, 'XII Akuntansi, XII TKJ 1, XII TKJ 2, XII TKR 1, XII TKR 2', '2026-07-23 05:40:00', '2026-07-24 12:30:00', '1', '5', '-5', 1, 1, 1, '2026-07-23 10:42:01'),
+(2, 'Quis Pendidikan Agama Islam', 2, 'XII Akuntansi, XII TKJ 1, XII TKJ 2, XII TKR 1, XII TKR 2', '2026-07-23 05:40:00', '2026-07-24 12:30:00', '1', '5', '-5', 1, 1, 1, '2026-07-23 10:42:39');
 
 -- --------------------------------------------------------
 
@@ -433,8 +435,8 @@ CREATE TABLE `val_token` (
 --
 
 INSERT INTO `val_token` (`id_token`, `nama_token`, `expired_at`, `setquis_id`, `created_at`) VALUES
-(2, 'EUMM3A', '2026-08-18 18:08:41', 2, '2026-07-18 11:33:41'),
-(3, 'B6KIQY', '2026-07-19 19:07:02', 1, '2026-07-18 12:06:02');
+(1, 'DLGX9Y', '2026-07-24 14:35:29', 1, '2026-07-24 02:35:29'),
+(2, 'DFUU9C', '2026-07-24 14:35:36', 2, '2026-07-24 02:35:36');
 
 -- --------------------------------------------------------
 
@@ -470,7 +472,7 @@ CREATE TABLE `val_users` (
   `email` varchar(100) DEFAULT NULL,
   `password` varchar(255) NOT NULL,
   `group_id` bigint(20) NOT NULL,
-  `remember_token` text NOT NULL,
+  `remember_token` text DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -479,10 +481,10 @@ CREATE TABLE `val_users` (
 --
 
 INSERT INTO `val_users` (`id_user`, `nama`, `username`, `email`, `password`, `group_id`, `remember_token`, `created_at`) VALUES
-(3, 'Abdur Rafi', '2324.01.0001', '', '2324.01.0001', 2, 'b6734860f1f93c22c69e2b5af665a471bb377a5ede91d245e8e3856fca4b87e4', '2026-07-16 14:53:39'),
-(4, 'Adelia Maharani', '2324.01.0002', '', '2324.01.0002', 2, 'f0b1ae4491f3b4d5c665b58e770716ed743733deb8806f84888c284e32fed7c4', '2026-07-16 14:55:35'),
-(5, 'Afwa Nur Aulia Salsabila', '2324.01.0003', '', '2324.01.0003', 2, '9e21a1e026a6d5ebae6adca8e48a15795b1666e40b1b993f39a14de51b4fa0d3', '2026-07-16 14:58:40'),
-(6, 'Ahmad Bagja A.A.K', '2324.01.0004', '', '2324.01.0004', 2, 'c2b02a2720e37989f3387b150b6dfde0b4aea52806f9fe6c1f1623b16de82ae2', '2026-07-16 15:43:14'),
+(3, 'Abdur Rafi', '2324.01.0001', '', '2324.01.0001', 2, '', '2026-07-16 14:53:39'),
+(4, 'Adelia Maharani', '2324.01.0002', '', '2324.01.0002', 2, '', '2026-07-16 14:55:35'),
+(5, 'Afwa Nur Aulia Salsabila', '2324.01.0003', '', '2324.01.0003', 2, '', '2026-07-16 14:58:40'),
+(6, 'Ahmad Bagja A.A.K', '2324.01.0004', '', '2324.01.0004', 2, '', '2026-07-16 15:43:14'),
 (7, 'Ardianysah', '2324.01.0005', '', '2324.01.0005', 2, '', '2026-07-17 00:22:24'),
 (8, 'Destri Dyani SY.', '2324.01.0006', '', '2324.01.0006', 2, '', '2026-07-17 00:22:58'),
 (9, 'Dewi Widiantina', '2324.01.0007', '', '2324.01.0007', 2, '', '2026-07-17 00:23:25'),
@@ -504,8 +506,8 @@ INSERT INTO `val_users` (`id_user`, `nama`, `username`, `email`, `password`, `gr
 (25, 'Seril Yuliani', '2324.01.0023', '', '2324.01.0023', 2, '', '2026-07-17 01:01:26'),
 (26, 'Sevilla Suci Anggraeni', '2324.01.0024', '', '2324.01.0024', 2, '', '2026-07-17 01:01:47'),
 (27, 'Suhendar', '2324.01.0025', '', '2324.01.0025', 2, '', '2026-07-17 01:02:03'),
-(28, 'Valah Ivan Maulana', '2324.01.0026', '', '2324.01.0026', 2, 'e6493d8cef9413d5527d51f3632f1c746f552ba7ce98ac05c7785823e268a8aa', '2026-07-17 01:02:22'),
-(29, 'Yudi Yana', '2324.01.0027', '', '2324.01.0027', 2, '', '2026-07-17 01:02:40');
+(29, 'Yudi Yana', '2324.01.0027', '', '2324.01.0027', 2, '', '2026-07-17 01:02:40'),
+(43, 'Valah Ivan Maulana', '2324.01.0026', '', '2324.01.0026', 2, '4c30d4b29c0533011928d6a669fad94b0b15ebabcea21e9171cdc2838ffbe5b0', '2026-07-21 12:10:27');
 
 --
 -- Indexes for dumped tables
@@ -622,7 +624,7 @@ ALTER TABLE `val_soal`
 -- AUTO_INCREMENT for table `val_token`
 --
 ALTER TABLE `val_token`
-  MODIFY `id_token` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_token` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `val_topik`
@@ -634,7 +636,7 @@ ALTER TABLE `val_topik`
 -- AUTO_INCREMENT for table `val_users`
 --
 ALTER TABLE `val_users`
-  MODIFY `id_user` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id_user` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- Constraints for dumped tables
